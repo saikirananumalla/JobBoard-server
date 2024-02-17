@@ -29,7 +29,7 @@ export const resolvers = {
             throw unAuthorizedError("Missing authentication");
           }
 
-          const companyId = user.companyId; //todo replace later
+          const companyId = user.companyId;
           return createJob({companyId, title, description})
       },
 
